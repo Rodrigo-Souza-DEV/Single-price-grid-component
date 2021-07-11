@@ -1,0 +1,146 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Karla', sans-serif;
+            background-color: hsl(204, 43%, 93%);
+            font-size: 16px;
+        }
+
+        main {
+            width: 637px;
+            height: auto;
+            margin: 150px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 1px 12px 26px -5px hsl(218, 22%, 67%);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        article {
+            width: 637px;
+            display: flex;
+            color: white;
+        }
+
+        section {
+            padding: 15px 40px;
+        }
+
+        section p {
+            line-height: 27px;
+        }
+
+        #left,
+        #right {
+            flex: 1;
+            padding: 15px 40px;
+        }
+
+        #left {
+            background-color: #2bb3b1;
+            border-radius: 0 0 0 10px;
+        }
+
+        #right {
+            background-color: #4abebd;
+            border-radius: 0 0 10px 0;
+        }
+
+        #right p {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: rgba(255, 255, 255, 0.589);
+        }
+
+        #left p {
+            font-weight: 400;
+        }
+
+        span {
+            color: rgba(255, 255, 255, 0.589);
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+
+        main section h1 {
+            color: hsl(179, 62%, 43%);
+        }
+
+        main section h3 {
+            color: hsl(71, 73%, 54%);
+        }
+
+        main section p {
+            color: hsl(218, 22%, 67%);
+        }
+
+        #prize {
+            font-size: 29px;
+            color: white;
+            font-weight: 700;
+        }
+
+        button {
+            width: 240px;
+            height: 48px;
+            color: white;
+            font-weight: 700;
+            background-color: hsl(71, 73%, 54%);
+            box-shadow: 1px 12px 26px -5px #31a188;
+            border: none;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        @media only screen and (max-width: 685px) and (min-width: 525px){
+            main {
+                width: 95%;
+            }
+            
+            article, button {
+                width: 100%;
+            }
+            
+            section,
+            #left,
+            #right {
+                padding: 25px 40px;
+            }
+        }
+        @media only screen and (max-width: 525px) {
+            main {
+                width: 95%;
+                margin: 75px auto;
+            }
+
+            article {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            #left {
+                border-radius: 0;
+            }
+
+            #right {
+                border-radius: 0 0 10px 10px;
+            }
+            section,
+            #left,
+            #right {
+                padding: 25px 40px;
+            } 
+            button{
+                width: 100%;
+            }
+        }
+        footer {
+            text-align: center;
+        }
+    
